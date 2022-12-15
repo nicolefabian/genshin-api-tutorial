@@ -4,15 +4,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="gi-api.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
     <title>Genshin Impact Character Gallery</title>
 </head>
 <body>
-    <div class="portfolio-container">
+    <div id="nation" class="portfolio-container">
         <div class="left-column">
             <div class="char-image-container">
                 <div class="char-image-background">
-                    <img id="character-image" class="char-image" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="Character Icon to fill" />
+                 <img id="character-image" class="char-image" alt="Character Icon">
                 </div>
             </div>
         </div>
@@ -39,5 +40,66 @@
             </div>
         </div>
     </div>
+    <span>
+        <label for="characters">Character </label>
+        <select id="characters" name="characters" onchange="getCharacterInfo(this.value)">
+      <!---  <option value="albedo">albedo</option>
+        <option value="aloy">aloy</option>
+        <option value="amber">amber</option>
+        <option value="arataki-itto">arataki-itto</option>
+        <option value="ayaka">ayaka</option>
+        <option value="ayato">ayato</option>
+        <option value="barbara">barbara</option>
+        <option value="beidou">beidou</option>
+        <option value="bennett">bennett</option>
+        <option value="chongyun">chongyun</option>
+        <option value="collei">collei</option>
+        <option value="diluc">diluc</option>
+        <option value="diona">diona</option>
+        <option value="eula">eula</option>
+        <option value="fischl">fischl</option>
+        <option value="ganyu">ganyu</option>
+        <option value="gorou">gorou</option>
+        <option value="hu-tao">hu-tao</option>
+        <option value="jean">jean</option>
+        <option value="kaeya">kaeya</option>
+        <option value="kazuha">kazuha</option>
+        <option value="keqing">keqing</option>
+        <option value="klee">klee</option>
+        <option value="kokomi">kokomi</option>
+        <option value="kuki-shinobu">kuki-shinobu</option>
+        <option value="lisa">lisa</option>
+        <option value="mona">mona</option>
+        <option value="ningguang">ningguang</option>
+        <option value="noelle">noelle</option>
+        <option value="qiqi">qiqi</option>
+        <option value="raiden">raiden</option>
+        <option value="razor">razor</option>
+        <option value="rosaria">rosaria</option>
+        <option value="sara">sara</option>
+        <option value="sayu">sayu</option>
+        <option value="shenhe">shenhe</option>
+        <option value="shikanoin-heizou">shikanoin-heizou</option>
+        <option value="sucrose">sucrose</option>
+        <option value="tartaglia">tartaglia</option>
+        <option value="thoma">thoma</option>
+        <option value="tighnari">tighnari</option>
+        <option value="traveler-anemo">traveler-anemo</option>
+        <option value="traveler-dendro">traveler-dendro</option>
+        <option value="traveler-electro">traveler-electro</option>
+        <option value="traveler-geo">traveler-geo</option>
+        <option value="venti">venti</option>
+        <option value="xiangling">xiangling</option>
+        <option value="xiao">xiao</option>
+        <option value="xingqiu">xingqiu</option>
+        <option value="xinyan">xinyan</option>
+        <option value="yae-miko">yae-miko</option>
+        <option value="yanfei">yanfei</option>
+        <option value="yelan">yelan</option>
+        <option value="yoimiya">yoimiya</option>
+        <option value="yun-jin">yun-jin</option>
+        <option value="zhongli">zhongli</option>-->
+    </select>
+    </span>
 </body>
 </html>
